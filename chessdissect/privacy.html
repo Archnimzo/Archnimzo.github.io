@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChessDissect · Privacy Policy</title>
+<link rel="alternate" hreflang="es" href="privacidad.html">
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #5f6368; --bg: #fff; --line: #ddd; --accent: #2f6f4f; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e8e8e8; --muted: #a0a0a0; --bg: #161616; --line: #333; --accent: #7cc49b; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+  p, li { margin: 6px 0; }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  .lang { float: right; font-size: .9rem; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
+  .wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+<a class="lang" href="privacidad.html" hreflang="es">Español</a>
+<h1>ChessDissect Privacy Policy</h1>
+<p class="meta">Effective date: October 14, 2026</p>
+
+<p>ChessDissect is a chess analysis app for Android developed by Archnimzo. It works offline most of the time and needs no account. This policy explains what information leaves your device and where it goes.</p>
+
+<h2>Summary</h2>
+<ul>
+  <li>There are no user accounts and no sign-in.</li>
+  <li>There is no analytics, advertising, crash reporting or tracking of any kind.</li>
+  <li>We run no servers: the developer does not receive or store any of your data.</li>
+  <li>Your games, analyses, mistakes and settings are stored only on your device.</li>
+  <li>The app only connects to the internet for the features described below, always directly to the relevant service (Lichess, Chess.com or GitHub).</li>
+</ul>
+
+<h2>Data stored on your device</h2>
+<p>Games you import or download, their analyses, the mistakes the app detects and your preferences (board, pieces, engine options) are kept in the app's internal storage. Analysis is done by the Stockfish engine on the device itself. None of this is sent anywhere.</p>
+<p>Only when you ask for it does the app export files (PGN or backups) to your Downloads folder or a location you choose, copy text to the clipboard, or open the Android share menu.</p>
+<p>If Android backup to your Google account is turned on, the system may include the app's data in that backup. It is handled by Google according to your settings; the developer has no access to it.</p>
+<p>You can delete all of this data from within the app or by uninstalling it (or with "Clear data" in Android settings).</p>
+
+<h2>Connections to third-party services</h2>
+<div class="wrap">
+<table>
+  <thead><tr><th>Feature</th><th>Service</th><th>What is sent</th><th>When</th></tr></thead>
+  <tbody>
+    <tr><td>Download games from Lichess</td><td>lichess.org</td><td>The username you type and, if you set them, the date range and maximum number of games</td><td>Only when you tap download</td></tr>
+    <tr><td>Download games from Chess.com</td><td>api.chess.com</td><td>The username you type (dates are filtered on the device)</td><td>Only when you tap download</td></tr>
+    <tr><td>Book-move detection during review</td><td>explorer.lichess.ovh (Lichess opening explorer)</td><td>Opening positions (in FEN notation) of the game you are reviewing, at most the first 24 half-moves. No player names or other game data are sent. Answers are cached on the device so the query is not repeated</td><td>When you review a game</td></tr>
+    <tr><td>Piece images</td><td>lichess1.org</td><td>Only the request for the images of the chosen piece set. If you choose the "Unicode" pieces, this connection is not made</td><td>When the board is shown</td></tr>
+    <tr><td>Native engine (NNUE network, ~98 MB)</td><td>github.com</td><td>Only the download request for the file, which is verified against its SHA-256 hash</td><td>Only if you download it from Settings</td></tr>
+  </tbody>
+</table>
+</div>
+<p>As with any internet connection, these services receive your IP address and technical details of the system browser (such as the user agent). ChessDissect adds no identifiers of its own. Their use of that data is governed by their own policies: <a href="https://lichess.org/privacy">Lichess</a>, <a href="https://www.chess.com/legal/privacy">Chess.com</a> and <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>. All connections use HTTPS.</p>
+
+<h2>Android permissions</h2>
+<ul>
+  <li><strong>Internet:</strong> for the connections in the table above.</li>
+  <li><strong>Network state:</strong> to warn you before downloading the NNUE network without Wi-Fi.</li>
+</ul>
+<p>The app does not request access to your location, contacts, camera, microphone or files.</p>
+
+<h2>Children</h2>
+<p>ChessDissect does not collect personal data from anyone, including children.</p>
+
+<h2>Changes to this policy</h2>
+<p>If the app changes what it does with data, we will update this page and its effective date.</p>
+
+<h2>Contact</h2>
+<p>For any privacy question: <a href="mailto:__CORREO__">__CORREO__</a></p>
+</main>
+</body>
+</html>
